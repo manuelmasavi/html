@@ -1,0 +1,168 @@
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #36ab4f;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-white: #fff;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Pagina */
+
+body {
+  font-family: Nunito, 'open sans', sans-serif;
+}
+
+.site-header {
+  width: 100%;
+}
+
+.site-main {
+  margin-top: 50px;
+}
+
+.site-header .lam-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lam-container {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.site-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.site-nav ul a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  margin: 16px;
+  line-height: 68px;
+  transition: color 0.25s ease-in-out;
+}
+.site-nav ul a:hover {
+  color: var(--color-secondary);
+}
+
+.hero-content .lam-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video-slide {
+  background-color: red;
+}
+.contact-buttons button {
+  width: 100%;
+  max-width: 264px;
+  height: 64px;
+  border: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.button-whatsapp {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
